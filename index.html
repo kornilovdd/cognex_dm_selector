@@ -181,6 +181,11 @@
 
                     accuracyPPE = countSizeMM*accuracyPXmm;
                     ppe.value = accuracyPPE.toFixed(2);
+                    if (accuracyPPE < 3) {
+                        ppe.style.backgroundColor = 'MistyRose'
+                    } else if (3 < accuracyPPE < 8) {
+                        ppe.style.backgroundColor = 'PaleGreen'
+                    }
 
 
                 }
