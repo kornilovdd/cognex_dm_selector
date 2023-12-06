@@ -109,8 +109,8 @@
             </select>
             <label for="exampleFormControlInput1" class="form-label" style="margin-top: .5rem;"  style="margin-top: .5rem;">Количество ячеек:</label>
             <select class="form-select" aria-label="Cells of code" id="cells">
-                <option value="20" selected>20x20</option>
-                <option value="22">22x22</option>
+                <option value="20">20x20</option>
+                <option value="22" selected>22x22</option>
                 <option value="24">24x24</option>
                 <option value="26">26x26</option>
                 <option value="32">32x32</option>
@@ -156,7 +156,7 @@
                         return "stop"
                     }
                     form.style.display = "block";
-                    if (Number(camModel.value < 9)) {
+                    if (Number(camModel.value < 20)) {
                         focal = Number(camModel.options[camModel.selectedIndex].getAttribute('lens'));
                     } else if (Number(camModel.value >= 20)) {
                         focal = Number(lensType.value)
